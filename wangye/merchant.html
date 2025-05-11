@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商家入驻与合作 - 乡趣云链</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="欢迎乡村旅游资源方和农产品供应商加入乡趣云链平台，我们提供技术培训、流量扶持和品牌孵化支持。">
+    <meta name="keywords" content="商家入驻, 合作申请, 乡村合作, 农产品供应, 旅游资源合作, 乡趣云链">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">乡趣云链</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="agri-tourism.html">农旅服务</a></li>
+                    <li><a href="mall.html">农产品商城</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="merchant.html" class="active">联系我们/商家入驻</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('images/hero-merchant.jpg');">
+            <div class="container">
+                <h1>商家入驻 / 合作申请</h1>
+                <p>携手乡趣云链，共创乡村数字未来</p>
+            </div>
+        </section>
+
+        <section id="contact-info" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">联系我们</h2>
+                <div class="contact-details-grid">
+                    <div class="contact-detail-item">
+                        <img src="lianxi.png" alt="电话图标" class="contact-icon">
+                        <h3>客服电话</h3>
+                        <p>123-4567-8900 (工作日 9:00-18:00)</p>
+                    </div>
+                    <div class="contact-detail-item">
+                        <img src="lianxi.png" alt="邮箱图标" class="contact-icon">
+                        <h3>电子邮箱</h3>
+                        <p>合作咨询：partner@xiangquyunlian.com</p>
+                        <p>客户服务：service@xiangquyunlian.com</p>
+                    </div>
+                    <div class="contact-detail-item">
+                        <img src="lianxi.png" alt="地址图标" class="contact-icon">
+                        <h3>公司地址</h3>
+                        <p>某某省某某市某某区创新大道123号乡趣云链大厦</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join-advantages" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">为何选择加入我们？</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <img src="jishu.png" alt="技术培训图标">
+                        <h3>技术培训与支持</h3>
+                        <p>提供全面的平台使用培训，包括VR内容制作指导、电商运营技巧、溯源系统接入等，助您轻松实现数字化转型。</p>
+                    </div>
+                    <div class="advantage-item">
+                        <img src="jishu.png" alt="流量扶持图标">
+                        <h3>精准流量扶持</h3>
+                        <p>通过SEO优化、内容营销、合作推广等多种渠道，为您的乡村项目或农产品带来持续增长的曝光和用户流量。</p>
+                    </div>
+                    <div class="advantage-item">
+                        <img src="jishu.png" alt="品牌孵化图标">
+                        <h3>乡村品牌孵化</h3>
+                        <p>协助打造独特的乡村IP和农产品品牌故事，提升品牌知名度和附加值，实现从“卖资源”到“卖品牌”的升级。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="application-process" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">入驻申请流程</h2>
+                <div class="application-form-container">
+                    <p class="section-intro">如果您是乡村旅游经营者、农产品生产者、乡村合作社或相关企业，并希望加入乡趣云链平台，请填写以下简易表单，我们的招商专员会尽快与您联系。</p>
+                    <form id="merchantApplicationForm" action="submit-application.php" method="POST">
+                        <div class="form-group">
+                            <label for="entityName">乡村/企业名称 <span class="required">*</span></label>
+                            <input type="text" id="entityName" name="entityName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPerson">联系人姓名 <span class="required">*</span></label>
+                            <input type="text" id="contactPerson" name="contactPerson" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">联系电话 <span class="required">*</span></label>
+                            <input type="tel" id="contactPhone" name="contactPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">电子邮箱</label>
+                            <input type="email" id="contactEmail" name="contactEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="resourceType">资源类型 <span class="required">*</span></label>
+                            <select id="resourceType" name="resourceType" required>
+                                <option value="">请选择</option>
+                                <option value="tourism">乡村旅游 (民宿、景点、体验项目等)</option>
+                                <option value="agri-product">农产品 (果蔬、干货、手作等)</option>
+                                <option value="both">两者皆有</option>
+                                <option value="other">其他 (请在备注说明)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="briefDescription">简要说明/备注</label>
+                            <textarea id="briefDescription" name="briefDescription" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">提交申请</button>
+                        </div>
+                    </form>
+                    <p style="margin-top: 30px; text-align: center;">
+                        详细合作模式、收益分成及服务标准，请下载我们的
+                        <a href="assets/XiangquYunlian-Cooperation-Guide.pdf" target="_blank" class="link-download">《乡趣云链合作指南》</a> (PDF)
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- 页脚内容与 index.html 相同 -->
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>联系方式</h4>
+                    <p>电话：123-4567-8900</p>
+                    <p>邮箱：contact@xiangquyunlian.com</p>
+                    <p>官方社交媒体： <a href="#" target="_blank">微信</a> | <a href="#" target="_blank">微博</a></p>
+                </div>
+                <div class="footer-column">
+                    <h4>服务条款</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">隐私政策</a></li>
+                        <li><a href="user-agreement.html">用户协议</a></li>
+                        <li><a href="complaint-channel.html">投诉渠道</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>友情链接</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">政府振兴相关网站</a></li>
+                        <li><a href="#" target="_blank">合作媒体A</a></li>
+                        <li><a href="#" target="_blank">合作媒体B</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 乡趣云链 保留所有权利</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

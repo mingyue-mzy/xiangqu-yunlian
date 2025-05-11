@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>农产品商城 - 乡趣云链</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="乡趣云链农产品商城，提供区块链溯源的优质农产品，特色盲盒，农户故事，支持组合套餐和订阅配送。">
+    <meta name="keywords" content="农产品电商, 区块链溯源, 农产品盲盒, 农户故事, 新鲜直邮, 乡村IP">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">乡趣云链</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="agri-tourism.html">农旅服务</a></li>
+                    <li><a href="mall.html" class="active">农产品商城</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="merchant.html">联系我们/商家入驻</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('images/hero-mall.jpg');">
+            <div class="container">
+                <h1>农产品商城</h1>
+                <p>源自乡土的馈赠，科技守护的安心</p>
+            </div>
+        </section>
+
+        <section id="category-zones" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">分类专区</h2>
+                <div class="category-tabs">
+                    <button class="tab-link active" onclick="openCategory(event, 'fruits-veg')">新鲜果蔬</button>
+                    <button class="tab-link" onclick="openCategory(event, 'dry-goods')">粮油干货</button>
+                    <button class="tab-link" onclick="openCategory(event, 'handmade')">乡村手作</button>
+                    <button class="tab-link" onclick="openCategory(event, 'origin-特色')">产地特色</button>
+                    <button class="tab-link" onclick="openCategory(event, 'ip-products')">乡村IP产品</button>
+                </div>
+
+                <div id="fruits-veg" class="category-content" style="display:block;">
+                    <h3>新鲜果蔬</h3>
+                    <div class="product-grid">
+                        <!-- 示例商品 -->
+                        <div class="product-item card">
+                            <img src="pingguo.png" alt="有机苹果" class="card-img-top">
+                            <div class="card-body">
+                                <h4><a href="product-detail.html?id=1">有机红富士苹果</a></h4>
+                                <p class="price">¥29.9 / kg</p>
+                                <p class="origin">产地：阳光村</p>
+                                <button class="btn btn-primary btn-sm">加入购物车</button>
+                            </div>
+                        </div>
+                        <!-- 更多商品 -->
+                    </div>
+                </div>
+                <!-- 其他分类内容 (dry-goods, handmade, etc.) 结构类似 -->
+            </div>
+        </section>
+
+        <section id="blind-box-zone" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">🎁 盲盒专区 🎁</h2>
+                <p class="section-intro">体验未知的惊喜！随机组合优质农产品，部分盲盒更附带线下体验券（如农场采摘、民宿优惠等）。</p>
+                <div class="product-grid">
+                    <div class="product-item card blind-box-item">
+                        <img src="manghe2.png" alt="农产品盲盒" class="card-img-top">
+                        <div class="card-body">
+                            <h4><a href="product-detail.html?id=blindbox1">乡趣惊喜盲盒</a></h4>
+                            <p class="price">¥99.00</p>
+                            <p>内含3-5种随机农产品+可能含体验券</p>
+                            <button class="btn btn-secondary btn-sm">立即抢购</button>
+                        </div>
+                    </div>
+                    <!-- 更多盲盒 -->
+                </div>
+            </div>
+        </section>
+
+        <section id="product-highlights" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">商品特色</h2>
+                <div class="features-grid-mall">
+                    <div class="feature-item-mall">
+                        <img src="qukuailian.png" alt="区块链溯源">
+                        <h3>区块链溯源</h3>
+                        <p>每件核心商品均提供详细的区块链溯源信息，从种植到生产过程图文并茂，甚至视频展示，让您买得放心。</p>
+                    </div>
+                    <div class="feature-item-mall">
+                        <img src="gushi.png" alt="农户故事">
+                        <h3>农户故事</h3>
+                        <p>我们深入产地，采访合作农户，用图文和视频讲述他们与土地的故事，感受食物背后的温度。</p>
+                    </div>
+                    <div class="feature-item-mall">
+                        <img src="peisong.png" alt="订阅配送">
+                        <h3>订阅制配送</h3>
+                        <p>选择您喜爱的农产品，享受每周或每月新鲜直邮服务。我们还提供灵活的组合套餐，满足您的多样需求。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="promotions" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">促销活动</h2>
+                <div class="promo-grid">
+                    <div class="promo-item">限时折扣：精选商品低至5折！</div>
+                    <div class="promo-item">拼团优惠：邀请好友共享美味，价格更优！</div>
+                    <div class="promo-item">会员积分：购物即送积分，可兑换好礼或抵扣现金！</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- 页脚内容与 index.html 相同 -->
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>联系方式</h4>
+                    <p>电话：123-4567-8900</p>
+                    <p>邮箱：contact@xiangquyunlian.com</p>
+                    <p>官方社交媒体： <a href="#" target="_blank">微信</a> | <a href="#" target="_blank">微博</a></p>
+                </div>
+                <div class="footer-column">
+                    <h4>服务条款</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">隐私政策</a></li>
+                        <li><a href="user-agreement.html">用户协议</a></li>
+                        <li><a href="complaint-channel.html">投诉渠道</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>友情链接</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">政府振兴相关网站</a></li>
+                        <li><a href="#" target="_blank">合作媒体A</a></li>
+                        <li><a href="#" target="_blank">合作媒体B</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 乡趣云链 保留所有权利</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function openCategory(evt, categoryName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("category-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(categoryName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

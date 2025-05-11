@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>农旅服务 - 乡趣云链</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="探索乡趣云链的农旅服务，包括乡村数字地图、VR全景体验、特色盲盒社交和乡村直播。">
+    <meta name="keywords" content="乡村数字地图, 路线规划, 盲盒社交, 乡村直播, 用户评价, 农旅服务">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">乡趣云链</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="agri-tourism.html" class="active">农旅服务</a></li>
+                    <li><a href="mall.html">农产品商城</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="merchant.html">联系我们/商家入驻</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('images/hero-agri-tourism.jpg');">
+            <div class="container">
+                <h1>农旅服务</h1>
+                <p>发现不一样的乡村之美，体验数字化的便捷旅程</p>
+            </div>
+        </section>
+
+        <section id="digital-map" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">乡村数字地图</h2>
+                <p class="section-intro">通过我们的交互式数字地图，您可以轻松发现合作乡村的景点、特色民宿和各种体验区域。点击地图上的标记点，即可查看详细的图文介绍，部分区域更支持VR全景漫游，让您身临其境。</p>
+                <div class="map-placeholder">
+                    <!-- 此处未来将集成真实的交互式地图 -->
+                    <img src="zhanwei.png" alt="乡村数字地图占位图" style="width:100%; max-width:800px; margin:0 auto; border:1px solid #ccc;">
+                    <p style="text-align:center; padding-top:10px;">交互地图展示区域</p>
+                </div>
+
+                <div class="route-planner sub-section">
+                    <h3>个性化路线规划</h3>
+                    <p>告诉我们您的旅行偏好（如亲子游、徒步探险、美食之旅等），我们将为您智能生成推荐的游玩路线。</p>
+                    <form id="routePlannerForm">
+                        <div class="form-group">
+                            <label for="travelPreference">旅行偏好：</label>
+                            <input type="text" id="travelPreference" name="travelPreference" placeholder="例如：亲子, 徒步, 美食, 文化">
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">预计时长：</label>
+                            <select id="duration" name="duration">
+                                <option value="half-day">半天</option>
+                                <option value="one-day">一天</option>
+                                <option value="two-days">两天</option>
+                                <option value="multi-day">多天</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">生成个性化行程</button>
+                    </form>
+                    <div id="generatedRoute" class="route-results" style="margin-top:20px;">
+                        <!-- 规划结果将显示在此 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="special-services" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">特色服务</h2>
+                <div class="service-grid">
+                    <div class="service-item card">
+                        <img src="manghe.png" alt="盲盒社交" class="card-img-top">
+                        <div class="card-body">
+                            <h3>盲盒社交</h3>
+                            <p>体验充满惊喜的农产品盲盒，每个盲盒都附带产地故事和详细的溯源信息。更有机会获得线下体验券，快来与朋友分享您的独特发现！</p>
+                            <a href="mall.html#blind-box-zone" class="btn btn-secondary">探索盲盒</a>
+                        </div>
+                    </div>
+                    <div class="service-item card">
+                        <img src="zhibo.png" alt="直播广场" class="card-img-top">
+                        <div class="card-body">
+                            <h3>直播广场</h3>
+                            <p>实时观看乡村风光、民宿实景、农事活动直播。与主播互动，直观了解当地特色，部分直播支持直接购买农产品或预约旅游服务。</p>
+                            <a href="#live-streams" class="btn btn-secondary">进入直播广场</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="user-reviews" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">用户评价</h2>
+                <p class="section-intro">看看其他游客怎么说，他们的真实点评和分享的照片将为您的旅行提供宝贵参考。</p>
+                <div class="reviews-grid">
+                    <!-- 示例评价 -->
+                    <div class="review-item card">
+                        <img src="touxiang1.png" alt="用户头像" class="review-avatar">
+                        <div class="card-body">
+                            <p>"这里的VR全景体验太棒了！通过VR技术，我能身临其境地感受到乡村的自然美景。民宿环境优美，服务也很贴心，让人感觉宾至如归。"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="user-reviews" class="section-padding">
+         <div class="container">
+            <h2 class="section-title">用户评价</h2>
+            <p class="section-intro">看看其他游客怎么说，他们的真实点评和分享的照片将为您的旅行提供宝贵参考。</p>
+            <div class="reviews-grid">
+                <!-- 示例评价 -->
+                <div class="review-item card">
+                    <img src="touxiang2.png" alt="用户头像" class="review-avatar">
+                    <div class="card-body">
+                        <p>"直播广场真是太有趣了！通过直播，我不仅看到了美丽的乡村风光，还直接购买到了新鲜的农产品。这种体验非常独特，强烈推荐！"</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </section>
+
+        <!-- 页脚内容与 index.html 相同 -->
+        <footer>
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>联系方式</h4>
+                        <p>电话：123-4567-8900</p>
+                        <p>邮箱：contact@xiangquyunlian.com</p>
+                        <p>官方社交媒体： <a href="#" target="_blank">微信</a> | <a href="#" target="_blank">微博</a></p>
+                    </div>
+                    <div class="footer-column">
+                        <h4>服务条款</h4>
+                        <ul>
+                            <li><a href="privacy-policy.html">隐私政策</a></li>
+                            <li><a href="user-agreement.html">用户协议</a></li>
+                            <li><a href="complaint-channel.html">投诉渠道</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>友情链接</h4>
+                        <ul>
+                            <li><a href="#" target="_blank">政府振兴相关网站</a></li>
+                            <li><a href="#" target="_blank">合作媒体A</a></li>
+                            <li><a href="#" target="_blank">合作媒体B</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 乡趣云链 保留所有权利</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
